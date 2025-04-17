@@ -3,7 +3,7 @@ import random
 def main():
     print("🔮 Welcome to Deepander Gupta's Fortune Teller (21JE0290) 🔮")
     
-    mood = input("How are you feeling today? (happy/sad/neutral/excited/stressed/confused/motivated): ").lower()
+    mood = input("How are you feeling today? (happy/sad/neutral/excited/stressed/confused/motivated/lazy): ").lower()
     
     happy_fortunes = [
         "✨ Your fortune: Wonderful moments lie ahead, Deepander Gupta! Keep that smile alive. ✨",
@@ -47,6 +47,13 @@ def main():
         "✨ Your fortune: Every small effort adds up—success is closer than you think. ✨"
     ]
 
+    lazy_fortunes = [
+        "✨ Your fortune: Rest is productive too—sometimes doing nothing is doing something. ✨",
+        "✨ Your fortune: Deepander Gupta, take it easy today—your chill vibe is unmatched. ✨",
+        "✨ Your fortune: Even the sun takes a break at night—you’ve earned yours too. ✨",
+        "✨ Your fortune: Great ideas often come when you’re lying down doing absolutely nothing. ✨"
+    ]
+
     if mood == "happy":
         print(random.choice(happy_fortunes))
     elif mood == "sad":
@@ -61,6 +68,8 @@ def main():
         print(random.choice(confused_fortunes))
     elif mood == "motivated":
         print(random.choice(motivated_fortunes))
+    elif mood == "lazy":
+        print(random.choice(lazy_fortunes))
     else:
         print("✨ Your fortune: I cannot read your mood, but Deepander Gupta's destiny is still bright! ✨")
 
